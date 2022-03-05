@@ -1,0 +1,190 @@
+/* 
+ページ全体
+*/
+
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(252, 252, 242);
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+
+
+/* 
+|------------------|
+|      header      |
+|------------------|
+ */
+
+  .headersettei {
+    display: flex;
+    cursor: pointer;
+    background: white;
+  }
+
+
+  .headersettei img {
+    width: 400px;
+    height: 150px;
+  }
+
+
+  .headersettei ul {
+    display: flex;
+    list-style: none;
+    padding: 25px;
+  }
+
+  .headersettei ul li {
+    text-align: center;
+    padding: 20px 3px;
+    width: 150px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2f2f2f;
+  }
+  a:link {
+    text-decoration: none;
+  }
+
+  .headersettei ul :hover {
+    background: rgb(221, 217, 217);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+|------------------|
+|       main       |
+|------------------|
+ */
+
+  section {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  section h1 {
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+  }
+
+  /* 
+  |------------------|
+  |   プロフィール   |
+  |------------------|
+  */
+  
+  .profile1 h1 {
+    font-weight: bold;
+    }
+    
+    .profile2 {
+      display: flex;
+      justify-content: center;
+    }
+    
+  /* 
+  |------------------|
+  |     サービス     |
+  |------------------|
+    */
+    
+    
+    
+  /* 
+  |------------------|
+  |  ポートフォリオ  |
+  |------------------|
+  */
+    .portfolio1 {
+      text-align: center;
+    }
+    
+    .portfolio2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .portfolio3 {
+      width: 400px;
+    }
+
+    .portfolio3 img {
+      cursor: pointer;
+    }
+
+
+
+    
+    
+  /* 
+  |------------------|
+  |    コンタクト    |
+  |------------------|
+    */
+
+    .contact2 img {
+      cursor: pointer;
+    }
+    
+
+
+
+
+
+
+/* 
+|------------------|
+|      footer      |
+|------------------|
+ */
+
+  footer {
+    padding-top: 80px;
+    text-align: center;
+    color: #aaa;
+  }
+
+
+
+  /* 
+|------------------|
+|    animation     |
+|------------------|
+ */
+
+  .animate {
+    opacity: 0;
+    transition: opacity 3s, transform 3s;
+  }
+
+  .animate.slide-from-left {
+    transform: translateX(-40px);
+  }
+
+  .animate.slide-from-right {
+    transform: translateX(40px);
+  }
+
+  .animate.appear {
+    opacity: 1;
+    transform: none;
+  }
